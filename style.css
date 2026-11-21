@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #26352b;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px 8%;
+    background-color: white;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #526056;
+}
+
+nav a:hover {
+    color: green;
+}
+
+button {
+    background-color: #2f5d3a;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f4329;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 8%;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #2f7d4a;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin: 20px 0;
+}
+
+.hero-text > p {
+    color: #647067;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.hero-card {
+    width: 280px;
+    padding: 35px;
+    border-radius: 30px;
+    background-color: #2f5d3a;
+    color: white;
+}
+
+.hero-card h2 {
+    font-size: 35px;
+}
+
+.hero-card p {
+    line-height: 1.6;
+}
+
+#about {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+#about h2,
+#plants h2,
+#contact h2 {
+    font-size: 38px;
+}
+
+.about-text {
+    max-width: 700px;
+    color: #647067;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+#plants {
+    padding: 80px 8%;
+}
+
+.plant-container {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.plant-card {
+    flex: 1;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.plant-card p {
+    color: #647067;
+    line-height: 1.6;
+}
+
+.plant-card:hover {
+    transform: translateY(-5px);
+}
+
+#contact {
+    padding: 80px 8%;
+    background-color: white;
+}
+
+#contact p {
+    color: #647067;
+    line-height: 1.6;
+}
+
+form {
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+}
+
+footer {
+    padding: 30px 8%;
+    background-color: #26352b;
+    color: white;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+
+    .hero {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero-card {
+        width: auto;
+    }
+
+    .plant-container {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 0 5px;
+    }
+
+}
